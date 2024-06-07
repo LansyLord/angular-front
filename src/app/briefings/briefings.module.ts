@@ -1,17 +1,24 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { MatTableModule } from '@angular/material/table';
+
 
 import { BriefingsRoutingModule } from './briefings-routing.module';
 import { BriefingsComponent } from './briefings/briefings.component';
-
+  
 
 @NgModule({
   declarations: [
-    BriefingsComponent
+     BriefingsComponent,
   ],
   imports: [
     CommonModule,
-    BriefingsRoutingModule
+    BriefingsRoutingModule,
+
+    MatTableModule,
+
+
+
   ]
 })
 export class BriefingsModule { }
